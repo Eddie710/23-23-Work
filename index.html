@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #legend{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <label for="browsers">Choose Your Favorite Ice Cream Flavor:</label>
+    <input list="browsers">
+
+    <datalist id="browsers">
+        <option value="Rocky Road">
+        <option value="Mint Chocolate Chip">
+        <option value="Vanilla">
+        <option value="Oreo">
+        <option value="Birthday Cake">
+      </datalist>
+      <br>
+      <br>
+
+      <label for="foods">Choose Your Favorite Ice Cream Flavor (select):</label>
+      <select name="food" id="foods">
+        <option >Rocky Road</option>
+        <option>Mint Chocolate Chip</option>
+        <option>Vanilla</option>
+        <option>Oreo</option>
+        <option>Birthday Cake</option>
+    </select>
+      <br>
+      <br>
+
+
+      <form>
+        <fieldset>
+            <legend id="legend"> Choose Ur Favorite Monster</legend>
+            <label>Cookie Monster</label>
+            <input type="radio">
+            <label>Dio</label>
+            <input type="radio">
+            <label>Default Dan</label>
+            <input type="radio">
+            <label>Joe Biden</label>
+            <input type="radio">
+        </fieldset>
+      </form>
+      <br>
+
+    <label for="temp1">Temperature:</label>
+    <h3>0<meter id="temp1" value="100" min="0" max="120" high="91" low="50"></meter>120</h3>
+    <h3>0<meter id="temp2" value="29" min="0" max="120" high="91" low="50"></meter>120</h3>
+    <h3>0<meter id="temp3" value="75" min="0" max="120"high="91" low="50" optimum="75"></meter>120</h3>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+        </form>
+
+        <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+            <input type="range" id="a" value="50">
+            *<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+            </form>
+
+</body>
+</html>
